@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+  network:
+  - ["private_network", { ip: "192.168.33.118" }]
+  - ["forwarded_port", { guest: "5443", host: "5443" }]
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-7.1
+
+suites:
+  - name: default
+    run_list:
+      - recipe[owasp-skf::default]
+    attributes:

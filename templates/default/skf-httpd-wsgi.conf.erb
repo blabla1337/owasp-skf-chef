@@ -1,0 +1,12 @@
+LoadModule wsgi_module modules/mod_wsgi.so
+
+  <FilesMatch ".+\.py$">
+    SetHandler wsgi-script
+  </FilesMatch>
+
+  # Deny access to compiled binaries
+  # You should not serve these to anyone
+  <FilesMatch ".+\.py(c|o)$">
+    Order Deny,Allow
+    Deny from all
+  </FilesMatch>
