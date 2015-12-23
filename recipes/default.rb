@@ -15,4 +15,5 @@ include_recipe 'owasp-skf::epel'
 include_recipe 'owasp-skf::skf'
 
 # install mod_security
-include_recipe 'mod_security::default'
+# not enabled for now it breaks the webserver config
+# include_recipe 'mod_security::default'
