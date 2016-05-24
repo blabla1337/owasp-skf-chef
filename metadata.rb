@@ -18,4 +18,4 @@ description      'Security Knowledge Framework is an expert system application
 				  helps developers in pre-development and post-development.'
 				  
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.1'
+version          '0.1.2'
