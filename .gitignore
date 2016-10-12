@@ -1,0 +1,11 @@
+### ChefCookbook template
+.vagrant
+/cookbooks
+
+# Bundler
+bin/*
+.bundle/*
+
+.kitchen/
+Berksfile.lock
+
